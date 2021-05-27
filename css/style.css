@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "HandjetOval";
+  src: url("../fonts/HandjetOvalright-Medium.ttf"); }
+@font-face {
+  font-family: "PressStart2P";
+  src: url("../fonts/PressStart2P-Regular.ttf"); }
+@font-face {
+  font-family: "BebasNeue";
+  src: url("../fonts/BebasNeue.ttf"); }
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf"); }
+@font-face {
+  font-family: "BebasNeueRegular";
+  src: url("../fonts/BebasNeueRegular.otf"); }
+body, ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #1d1c1f;
+  justify-content: center;
+  flex-direction: column; }
+.hero-wrap.hero-wrap-2 .overlay{
+  height: 80px;
+}
+.hero-wrap.hero-wrap-2 .slider-text{
+  height: 277px !important;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-right: 67px;
+  padding-left: 67px; }
+  .container__title {
+    align-self: center;
+    margin-top: 245px; }
+  .container-carusel {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    min-height: 712px; }
+    .container-carusel-navigation .navigation-arrow {
+      cursor: pointer;
+      background: url("../images/arrow.png") no-repeat;
+      width: 58px;
+      height: 61px; }
+      .container-carusel-navigation .navigation-arrow:hover {
+        background-position: 0 -63px; }
+      .container-carusel-navigation .navigation-arrow-up {
+        margin-bottom: 65px; }
+      .container-carusel-navigation .navigation-arrow-down {
+        transform: rotate(180deg); }
+    .container-carusel-navigation .navigation-list {
+      list-style-type: none; }
+      .container-carusel-navigation .navigation-list li {
+        width: 14px;
+        height: 13px;
+        background: #28282a;
+        margin: auto;
+        margin-bottom: 85px;
+        cursor: pointer; }
+      .container-carusel-navigation .navigation-list li.active {
+        background: #dfdfdf; }
+    .container-carusel-label {
+      z-index: 1;
+      padding-top: 100px;
+      padding-left: 65px; }
+      .container-carusel-label .label-shortDescription {
+        font-family: "HandjetOval";
+        color: #a2a1a2;
+        font-size: 25px; }
+      .container-carusel-label .label-title {
+        margin-top: 45px;
+        font-family: "PressStart2P";
+        color: #b8b7b8;
+        text-transform: uppercase;
+        font-size: 30px; }
+      .container-carusel-label .label-description {
+        font-family: "HandjetOval";
+        color: #fff;
+        font-size: 30px;
+        max-width: 405px;
+        margin-top: 120px;
+        line-height: 1.4; }
+    .container-carusel-vape {
+      position: relative; }
+      .container-carusel-vape img {
+        position: absolute;
+        left: -105px; }
+  .container-order {
+    padding-top: 280px;
+    display: flex;
+    flex-direction: row; }
+    .container-order .order-leftSide {
+      background: url("../images/orderLeftSide.png") no-repeat;
+      width: 112px;
+      height: 525px; }
+    .container-order .order-items {
+      margin-left: 35px; }
+      .container-order .order-items__item {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px solid #323134; }
+        .container-order .order-items__item .item-title {
+          text-transform: uppercase;
+          color: #fff;
+          font-family: "BebasNeue";
+          font-size: 20px;
+          letter-spacing: 2px; }
+          .container-order .order-items__item .item-title span {
+            font-family: "Montserrat-Bold";
+            display: block;
+            color: #9E9E9E;
+            text-transform: none;
+            font-size: 10px; }
+        .container-order .order-items__item .item-input {
+          margin-left: 28px;
+          padding: 4px; }
+          .container-order .order-items__item .item-input input {
+            width: 80px;
+            height: 48px;
+            color: #6a6a6c;
+            background: #101111;
+            border: 3px solid #444345;
+            font-family: "BebasNeue";
+            font-size: 55px;
+            text-indent: 5px;
+            padding-top: 6px;
+            margin-top: 3px;
+            margin-bottom: 3px; }
+          .container-order .order-items__item .item-input-bricks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            .container-order .order-items__item .item-input-bricks__brick {
+              width: 24px;
+              height: 9px;
+              background: #444345; }
+            .container-order .order-items__item .item-input-bricks .brick-white {
+              background: #fff; }
+    .container-order-finishing {
+      flex-grow: 1;
+      margin-left: 140px; }
+      .container-order-finishing .order-finishing-title {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Montserrat-Bold";
+        font-size: 24px;
+        letter-spacing: 77px; }
+      .container-order-finishing .order-finishing-total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: "BebasNeueRegular";
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 81px;
+        border-bottom: 4px solid #6a6a6c; }
+        .container-order-finishing .order-finishing-total span {
+          color: #6a6a6c; }
+      .container-order-finishing .order-finishing-area {
+        background: #29282a;
+        padding-top: 12px;
+        margin-top: 25px;
+        position: relative; }
+        .container-order-finishing .order-finishing-area__title {
+          color: #fff;
+          text-transform: uppercase;
+          font-family: "Montserrat-Bold";
+          text-align: center;
+          letter-spacing: 5px; }
+        .container-order-finishing .order-finishing-area textarea {
+          color: #949495;
+          background: #29282a;
+          border: none;
+          width: 100%;
+          height: 70px;
+          box-sizing: border-box;
+          font-family: "Montserrat-Bold";
+          padding-right: 48px;
+          padding-left: 48px; }
+        .container-order-finishing .order-finishing-area__decore {
+          background: url("../images/textarea-decor.png") no-repeat;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 85px;
+          height: 35px; }
+      .container-order-finishing .order-finishing-adress {
+        min-height: 126px; }
+      .container-order-finishing .order-finishing-payment {
+        min-height: 215px; }
+      .container-order-finishing .order-finishing-button {
+        margin-top: 50px; }
+        .container-order-finishing .order-finishing-button__button {
+          color: #5b5b5d;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f2f2f2;
+          text-transform: uppercase;
+          text-align: center;
+          font-family: "BebasNeue";
+          cursor: pointer;
+          width: 320px;
+          height: 51px;
+          margin: auto;
+          border: 1px solid #ababac;
+          z-index: 1; }
+          .container-order-finishing .order-finishing-button__button:hover .order-finishing-button__arrow {
+            background-position: 0 -63px; }
+          .container-order-finishing .order-finishing-button__button-decor {
+            display: block;
+            margin: auto;
+            position: relative;
+            bottom: 53px; }
+        .container-order-finishing .order-finishing-button__arrow {
+          position: absolute;
+          left: 10px;
+          background: url("../images/arrow.png");
+          width: 58px;
+          height: 61px;
+          transform: rotate(90deg); }
+
+#preloadimages {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
